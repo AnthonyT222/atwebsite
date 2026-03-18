@@ -13,8 +13,24 @@ h1 {
   color: rgb(0,0,0);
 }
 
-p, 
-li {
+.breadcrumb > li {
+display: inline;
+}
+
+.breadcrumb li+li::before {
+	padding: 10px;
+  content: ">";
+}
+
+.breadcrumb a {
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: red;
+}
+
+p, li {
   font-size: 18px;
     color:rgb(0, 0, 0);
     font-weight: bold;
