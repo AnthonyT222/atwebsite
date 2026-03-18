@@ -15,6 +15,7 @@ h1 {
 
 .breadcrumb > li {
 display: inline;
+font-size: small;
 }
 
 .breadcrumb li+li::before {
@@ -24,12 +25,27 @@ display: inline;
 
 .breadcrumb a {
   text-decoration: none;
+  background-color: rgb(1, 196, 196);
+  text-align: center;
+  margin-right: 15px;
+  padding: 0 5px;
+  position: relative;
+}
+.breadcrumb a::before {
+  left: -10px;
+  border-left-color: transparent; 
+}
+.breadcrumb a::after {
+  left: 100%;
+  border-color: transparent;
 }
 
 .breadcrumb a:hover {
   color: red;
 }
-
+.breadcrumb li.active{
+  color: rgb(253, 2, 2);
+}
 p, li {
   font-size: 18px;
     color:rgb(0, 0, 0);
